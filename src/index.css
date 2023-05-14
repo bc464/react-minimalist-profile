@@ -1,0 +1,328 @@
+:root {
+  --primary-cyan: #5fb4a2;
+  --primary-darkBlue: #203a4c;
+  --primary-grayishBlue: #33323d;
+  --secondary-ligthGrey: #fafafa;
+  --secondary-grey-textfield: #eaeaeb;
+  --secondary-errorRed: #f43030;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fafafa;
+}
+
+/* **PROFILE VIEW PAGES CSS */
+
+.profile-main__image {
+  margin: 0 165px 115px 165px;
+}
+.profileView-heroImg {
+  width: 100%;
+}
+.profile-main__content {
+  margin: 0 165px 64px 165px;
+  display: flex;
+  column-gap: 125px;
+}
+.profile-main__left-box {
+  display: flex;
+  flex-direction: column;
+}
+.content-left {
+  padding: 48px 0;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  mix-blend-mode: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.29px;
+  margin-bottom: 29px;
+  color: var(--primary-grayishBlue);
+}
+.content-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--primary-grayishBlue);
+  margin-bottom: 23px;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--primary-cyan);
+  margin-bottom: 16px;
+}
+.btn {
+  margin-top: 16px;
+  width: 173px;
+  padding: 17px 0;
+  color: var(--primary-grayishBlue);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid var(--primary-grayishBlue);
+  cursor: pointer;
+}
+
+h5 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: -0.29px;
+  margin-bottom: 28px;
+  color: var(--primary-grayishBlue);
+}
+.project-background p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--primary-grayishBlue);
+  margin-bottom: 40px;
+}
+.profileView-previewImg:last-of-type {
+  margin-top: 32px;
+}
+/* **profileNextPrev */
+.profileNextPrev-container {
+  margin: 0 165px 115px 165px;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  mix-blend-mode: normal;
+  position: relative;
+}
+.profileNextPrev-container img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.profileNextPrev-container h5 {
+  margin-bottom: 2px;
+}
+.profileNextPrev-container p {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.profileNextPrev-left {
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+}
+.profileNextPrev-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+}
+.profileNextPrev-line {
+  border-left: 1px solid rgba(51, 50, 61, 0.15);
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+.profileNextPrev-right {
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+}
+/* **ContactContent */
+.getInTouch {
+  margin: 0 165px 47px;
+  padding: 48px 0;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  mix-blend-mode: normal;
+  display: flex;
+  column-gap: 125px;
+}
+h6 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  width: 350px;
+}
+.getInTouch p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--primary-grayishBlue);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 24px;
+  width: 635px;
+}
+.social img {
+  margin-right: 15px;
+}
+.contactMe {
+  margin: 0 165px 109px 165px;
+  display: flex;
+  column-gap: 125px;
+}
+.contactMe-form form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.form-box {
+  width: 635px;
+  display: flex;
+  flex-direction: column;
+}
+.form-box label {
+  margin-bottom: 8px;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: var(--secondary-grey-textfield);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: 9px 9px 9px 16px;
+  color: var(--primary-darkBlue);
+  font-size: 13px;
+  cursor: pointer;
+}
+::placeholder {
+  color: var(--primary-grayishBlue);
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+textarea {
+  border: none;
+  outline: none;
+  background-color: var(--secondary-grey-textfield);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: 9px 9px 57px 16px;
+}
+.errorMsg {
+  color: var(--secondary-errorRed);
+  font-size: 13px;
+  font-weight: 400;
+}
+.btnContact {
+  background-color: var(--primary-darkBlue);
+  color: var(--secondary-grey-textfield);
+}
+/* media queries */
+@media (max-width: 1380px) {
+  .profile-main__right-box {
+    width: 562px;
+  }
+  .profileView-previewImg {
+    width: 562px;
+  }
+}
+@media (max-width: 1024px) {
+  .profile-main__image,
+  .profile-main__content,
+  .profileNextPrev-container {
+    margin: 0 40px 80px 39px;
+  }
+  .getInTouch,
+  .contactMe {
+    margin: 0 40px 32px 39px;
+  }
+  .profile-main__content {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .content-left {
+    position: relative;
+  }
+  .content-text {
+    display: flex;
+    column-gap: 240px;
+  }
+  .content-text__secondary {
+    position: absolute;
+    top: 97px;
+  }
+  h4 {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  .profile-main__right-box {
+    width: auto;
+  }
+  .profileView-previewImg {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .getInTouch,
+  .contactMe {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .getInTouch p,
+  .contactMe form {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .profile-main__image,
+  .profile-main__content {
+    margin: 0 32px 48px 32px;
+  }
+  .content-text {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+  }
+  .content-text__secondary {
+    position: relative;
+    top: 0;
+  }
+  h4 {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .profileNextPrev-left {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+  }
+  .profileNextPrev-right {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    row-gap: 16px;
+  }
+  .profileNextPrev-right h5 {
+    text-align: right;
+  }
+  .profileNextPrev-line {
+    height: 100%;
+  }
+  .form-box {
+    width: 325px;
+  }
+}

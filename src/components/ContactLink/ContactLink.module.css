@@ -1,0 +1,74 @@
+.contactLinkContainer {
+  margin: 0 165px 150px 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+h3 {
+  width: 350px;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  color: var(--primary-grayishBlue);
+}
+.contactLinkLine {
+  width: 534px;
+  border: 1px solid var(--primary-grayishBlue);
+  mix-blend-mode: normal;
+  opacity: 0.15;
+}
+.btnSecondary {
+  width: 162px;
+  padding: 17px 30px 17px 32px;
+  color: var(--primary-grayishBlue);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid var(--primary-grayishBlue);
+  cursor: pointer;
+}
+.btnSecondary:hover {
+  background-color: var(--primary-grayishBlue);
+  color: #fff;
+}
+.linkPage {
+  text-decoration: none;
+  color: var(--primary-grayishBlue);
+  cursor: pointer;
+}
+@media (max-width: 1380px) {
+  .contactLinkLine {
+    width: 450px;
+  }
+}
+@media (max-width: 1024px) {
+  .contactLinkContainer {
+    margin: 0 41px 96px 39px;
+  }
+  .contactLinkLine {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .contactLinkLine {
+    width: 113px;
+  }
+}
+@media (max-width: 750px) {
+  .contactLinkContainer {
+    margin: 0 32px 80px 32px;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  h3 {
+    text-align: center;
+  }
+  .contactLinkLine {
+    display: none;
+  }
+}

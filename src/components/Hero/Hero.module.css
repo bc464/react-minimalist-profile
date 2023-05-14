@@ -1,0 +1,106 @@
+.heroContainer {
+  margin: 0 165px 150px 165px;
+  position: relative;
+}
+.imageHero {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  width: 100%;
+}
+.heroHeading {
+  width: 445px;
+  position: absolute;
+  z-index: 10;
+  top: 243px;
+  padding: 56px 55px 0 0;
+  background-color: white;
+}
+h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.45px;
+  color: var(--primary-grayishBlue);
+  margin-bottom: 53px;
+}
+.buttonContainer {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.btnMain {
+  border: none;
+  text-transform: uppercase;
+  padding: 17px 0;
+  width: 100%;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.1px;
+  letter-spacing: 2px;
+  background-color: var(--primary-darkBlue);
+  color: white;
+  cursor: pointer;
+}
+.btnMain:hover {
+  background-color: var(--primary-cyan);
+  color: white;
+}
+.arrowDown {
+  padding: 17px 16px;
+  background-color: var(--primary-grayishBlue);
+}
+.arrowDown:hover {
+  background-color: darkcyan;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-lightGrey);
+}
+a:hover {
+  color: white;
+}
+@media (max-width: 1380px) {
+  .heroHeading {
+    top: 205px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroContainer {
+    margin: 0 41px 96px 39px;
+  }
+  .imageHero {
+    height: 100%;
+  }
+  .heroHeading {
+    top: 322px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 750px) {
+  .heroContainer {
+    margin: 0 32px 96px 32px;
+    height: 570px;
+  }
+  .imageHero {
+    height: auto;
+  }
+  .heroHeading {
+    width: 100%;
+    top: 290px;
+    padding: 0;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+  }
+}
