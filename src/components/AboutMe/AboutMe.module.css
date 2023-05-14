@@ -30,7 +30,7 @@ h2 {
 }
 .btnSecondary {
   width: 202px;
-  padding: 17px 0;
+  padding: 17px;
   color: var(--primary-grayishBlue);
   font-size: 12px;
   font-weight: 400;

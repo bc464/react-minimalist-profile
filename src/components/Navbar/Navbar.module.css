@@ -20,7 +20,7 @@
   color: var(--primary-grayishBlue);
   cursor: pointer;
 }
-a:hover {
+.linkPage:hover {
   color: var(--primary-cyan);
 }
 .hamburgerIcon {

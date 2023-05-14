@@ -5,7 +5,7 @@ import classes from "./Footer.module.css"
 export const Footer = () => {
   return (
     <>
-        <div className={classes.footer}>
+        <div role="contentinfo" className={classes.footer}>
             <div className={classes.footerLeft}>
                 <img src='./images/logo.svg' alt='logo' className={classes.logoBottom}/>
             <div className={classes.links}>

@@ -12,7 +12,7 @@ export const Navbar = () => {
   }
   return (
   
-    <div className={classes.navbar}>
+    <div role="navigation" className={classes.navbar}>
         <img src='../images/logo.svg' alt='mainlogo'></img>
         <OutsideClickHandler onOutsideClick={()=> {
           setMenuOpened(false)
