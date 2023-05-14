@@ -13,7 +13,7 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/react-minimalist-profile/'}>
+    <BrowserRouter >
     <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
